@@ -78,7 +78,8 @@ ul,li{
     text-decoration: none;
     display: flex;
 }
-.logo{
+.logo img{
+    width: 80px;
     font-size: 2em;
     color: #fff;
     user-select: none;
