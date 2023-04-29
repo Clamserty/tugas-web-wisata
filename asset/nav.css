@@ -183,13 +183,23 @@ ul,li{
         backdrop-filter: blur(20px);
 
     }
+    header{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .scroll{
         border-radius: 0 0 0 0;
+        left: 0;
+        right: 0;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .scroll1{
         border-radius: 0 0 0 0;
         backdrop-filter: none;
         background: #11101b94;
+        left: 0;
+        right: 0;
 
     }
     .navigation.active ul{
@@ -226,7 +236,8 @@ ul,li{
     }
     .blur{
         background: #11101b73;
-
+        left: 0;
+        right: 0;
     }
     
     .ganti{
@@ -240,6 +251,21 @@ ul,li{
         transition: 0.2s;
         overflow: hidden;
         background: #11101b;
+        left: 0;
+        right: 0;
 
+    }
+    @media only screen and  (max-width: 500px){
+        .scroll{
+            border-radius: 0 0 0 0;
+            left: 0;
+            right: 0;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .scroll1{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
     }
 }

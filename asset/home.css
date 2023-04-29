@@ -4,12 +4,13 @@ body{
 }
 .conten{
     width: 90%;
+    height: 100vh;
     border-radius: 5px 100px 5px;
     padding-top: 200px;
     position: relative;
     margin: auto;
     /* color: #fff; */
-    /* background: rgba(0, 0, 0, 0.712) */
+    background: rgba(255, 255, 255, 0.712)
     align-items: center;
     
 }
@@ -32,7 +33,7 @@ body{
 .conten .judul {
     font-size: 65px;
     padding-left: 20px;
-    padding-top: 9%;
+    padding-top: ;
     letter-spacing: 20%;
     color: #cf5858;
     margin-left: auto;
@@ -70,7 +71,8 @@ body{
     background: #19243b;
     color: #fff;
     width: 100%;
-    height: 50vh;
+    height: auto;
+    padding-bottom: 50px;
 }
 .contener2{
     /* background: #19243b; */
@@ -196,10 +198,10 @@ body{
   }
 } */
 @media only screen and  (max-width: 1700px){
-    .contener1{
-        height: 70vh;
+    /* .contener1{
+        height: 700px;
         justify-items: center;
-    }
+    } */
     .contener1 .isi img{
         width: 450px;
         margin-bottom: 150px;
@@ -238,9 +240,9 @@ body{
         width: 100%;
         
     }
-    .contener1{
-        height: 110vh;
-    }
+    /* .contener1{
+        height: 1100px;
+    } */
     .contener1 .isi{
         transition: 0.5s all;
         display: none;
@@ -307,8 +309,71 @@ body{
     .contener1 .isi-hp img{
         width: 400px;
     }
+    /* .contener1{
+        height: auto;
+        padding-bottom: 50px;
+    } */
     .tm1 .bahas img{
         width: 400px;
     }
+    .kata{
+        font-size: 20px;
+    }
+    }
+    @media only screen and  (max-width: 550px){
+        .conten .penjelasan p{
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+
+    @media only screen and  (max-width: 452px){
+        .conten .penjelasan p{
+            font-size: 10px;
+            line-height: 13px;
+        }
+        .conten .judul h1{
+            font-size: 70px ;
+        };
+        .conten .penjelasan h3{
+            font-size: 20px;
+        }
+        .contener1 .judul{
+            font-size: 50px;
+        }
+        .contener2 .judul{
+            font-size: 50px;
+        }
+        .contener1 .isi-hp img{
+            width: 300px;
+        }
+        /* .contener1{
+            height: auto;
+            padding-bottom: 50px;
+        } */
+        .tm1 .bahas img{
+            width: 300px;
+        }
+        .kata{
+            font-size: 10px;
+        }
+        .contener1 .isi-hp .bahas{
+        font-size: 10px;
+        }
+        .tm1 .judultm{
+            padding-top: 10px;
+            font-size: 20px;
+            margin: auto;
+        }
+        .tm1 .bahas{
+            margin-top: 2px;
+            padding-top: 10px;
+        }
+        .button-67{
+            padding: 10px;
+            font-size: 10px;
+
+        }
+        
     }
 }
