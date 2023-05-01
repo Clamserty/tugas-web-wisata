@@ -3,19 +3,20 @@ body{
     
 }
 .conten{
-    width: 100%;
+    width: 90%;
+    height: 100vh;
     border-radius: 5px 100px 5px;
     padding-top: 200px;
     position: relative;
     margin: auto;
     /* color: #fff; */
-    /* background: rgba(0, 0, 0, 0.712) */
-    align-items: center;
+    /* background: rgba(255, 255, 255, 0.712) */
+    /* align-items: center; */
     
 }
 .conten .penjelasan{
     /* backdrop-filter: blur(20px); */
-    
+
     color: #fff;
     padding-left: 20px;
     padding-bottom: 25px;
@@ -44,13 +45,9 @@ body{
     text-align: center;
     
 }
-.judul h1 {
+.conten .judul h1{
     font-family: 'Times New Roman';
-}
-.contener1 .judul {
-    padding-top: 30px;
-    font-family: 'Times New Roman';
-    font-size: 30px;
+
 }
 /* .navigation-scorlled{
 
@@ -78,7 +75,9 @@ body{
     background: #19243b;
     color: #fff;
     width: 100%;
-    height: 60vh;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .contener2{
     /* background: #19243b; */
@@ -99,8 +98,9 @@ body{
     text-align: center;
     padding-bottom: 1%;
 }
-.contener1 .isi{
+.contener1 .isi-hp{
     display: grid;
+    grid-template-columns: auto;
     margin: auto;
     font-size: 25px;
     text-align: justify;
@@ -115,9 +115,12 @@ body{
     width: 500px;
     transition: 0.5s all;
 }
-.contener1 .isi-hp{
-    display: none;
-}
+/* .contener1 .isi-hp p{
+    margin: auto;
+    font-size: 23px;
+    text-align: justify;
+    width: 80%;
+} */
 .tm1{
     /* padding-top: 5px; */
     width: 80%;
@@ -135,17 +138,19 @@ body{
     text-align: center;
     padding-bottom: 1%;
 }
-.tm1 .bahas img{
+.backvid{
     border-radius: 30px;
     margin: auto;
     justify-self: center;
     display: block;
-    width: 500px;
+    width: 900px;
+    height: 500px;
     transition: 0.5s all;
+    margin-bottom: 30px;
 }
 .tm1 .bahas{
     display: grid;
-    /* grid-template-columns: 40% auto; */
+    grid-template-columns: auto;
     font-size: 25px;
     text-align: justify;
     padding-bottom: 70px;
@@ -156,10 +161,9 @@ body{
     text-decoration: none;
 }
 .bahas .kata{
+    padding-top: 20px;
   margin-right: 20px;
-}
-.bahas .kata1{
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -191,6 +195,8 @@ body{
   width: max-content;
   word-break: normal;
   word-spacing: normal;
+  padding: 24px;
+
 }
 
 .button-67:hover {
@@ -198,16 +204,16 @@ body{
   box-shadow: -10px -10px 20px 0 #fff, 10px 10px 20px 0 #16991d;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .button-67 {
     padding: 24px;
   }
-}
+} */
 @media only screen and  (max-width: 1700px){
-    .contener1{
-        height: 70vh;
+    /* .contener1{
+        height: 700px;
         justify-items: center;
-    }
+    } */
     .contener1 .isi img{
         width: 450px;
         margin-bottom: 150px;
@@ -229,10 +235,11 @@ body{
         text-align: justify;
         width: 90%;
     }
-    .contener1 .isi img{
+    .backvid{
         transition: 0.5s all;
-        width: 450px;
-        margin-bottom: 150px;
+        width: 700px;
+        height: 400px;
+        margin-bottom: 10px;
     }
     .tm1{
         transition: 0.5s all;
@@ -246,9 +253,9 @@ body{
         width: 100%;
         
     }
-    .contener1{
-        height: 110vh;
-    }
+    /* .contener1{
+        height: 1100px;
+    } */
     .contener1 .isi{
         transition: 0.5s all;
         display: none;
@@ -264,7 +271,7 @@ body{
     }
     .contener1 .judul{
 
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
     .contener1 .isi-hp img{
         transition: 0.5s all;
@@ -291,5 +298,105 @@ body{
     .tm1 .bahas .kata{
         padding-top: 50px;
         margin: 0 20px 0 20px;
+    }
+    @media only screen and  (max-width: 1100px){
+    .backvid{
+        width: 600px;
+        height: 340px;
+    }
+
+    }
+    @media only screen and  (max-width: 820px){
+    .conten .penjelasan p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .conten .penjelasan h3{
+        font-size: 20px;
+    }
+    .contener1 .judul{
+        font-size: 75px;
+    }
+    .contener2 .judul{
+        font-size: 75px;
+    }
+    .backvid{
+        width: 450px;
+        height: 260px;
+    }
+    /* .contener1{
+        height: auto;
+        padding-bottom: 50px;
+    } */
+    .tm1 .bahas img{
+        width: 400px;
+    }
+    .kata{
+        font-size: 20px;
+    }
+    }
+    @media only screen and  (max-width: 550px){
+        .conten .penjelasan p{
+            font-size: 12px;
+            line-height: 13px;
+        }
+        .backvid{
+            width: 350px;
+            height: 200px;
+        }
+        .contener1 .isi-hp .bahas{
+            font-size: 20px;
+            }
+    }
+
+    @media only screen and  (max-width: 452px){
+        .conten .penjelasan p{
+            font-size: 10px;
+            line-height: 13px;
+        }
+        .conten .judul h1{
+            font-size: 70px ;
+        };
+        .conten .penjelasan h3{
+            font-size: 20px;
+        }
+        .contener1 .judul{
+            font-size: 50px;
+        }
+        .contener2 .judul{
+            font-size: 50px;
+        }
+        .backvid{
+            width: 300px;
+            height: 170px;
+        }
+        /* .contener1{
+            height: auto;
+            padding-bottom: 50px;
+        } */
+        .tm1 .bahas img{
+            width: 300px;
+        }
+        .kata{
+            font-size: 10px;
+        }
+        .contener1 .isi-hp .bahas{
+        font-size: 10px;
+        }
+        .tm1 .judultm{
+            padding-top: 10px;
+            font-size: 20px;
+            margin: auto;
+        }
+        .tm1 .bahas{
+            margin-top: 2px;
+            padding-top: 10px;
+        }
+        .button-67{
+            padding: 10px;
+            font-size: 10px;
+
+        }
+
     }
 }
