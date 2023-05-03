@@ -154,13 +154,38 @@ body{
     font-size: 25px;
     text-align: justify;
     padding-bottom: 70px;
+    /* padding-top: 50px; */
+}
+.tm1 .bahas1{
+    display: grid;
+    grid-template-columns: 40% auto;
+    font-size: 25px;
+    text-align: justify;
+    /* padding-bottom: 70px; */
     padding-top: 50px;
+}
+.tm1 .bahas1 img{
+    border-radius: 30px;
+    margin: auto;
+    justify-self: center;
+    display: block;
+    width: 500px;
+    transition: 0.5s all;
 }
 
 .body a {
     text-decoration: none;
 }
 .bahas .kata{
+
+        margin-right: 20px;
+    padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.bahas1 .kata{
+
+        margin-right: 20px;
     padding-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
@@ -220,7 +245,7 @@ body{
     }
 }
 @media only screen and  (max-width: 1600px){
-    .tm1 .bahas img{
+    .tm1 .bahas1 img{
         width: 450px;
         transition: 0.5s all;
     }
@@ -288,14 +313,27 @@ body{
         transition: 0.5s all;
         
     }
+    .contener1 .isi-hp .bahas1{
+        padding-top: 50px;
+        transition: 0.5s all;
+        
+    }
     .tm1 .bahas{
         display: grid;
         grid-template-columns:  auto;
     }
-    .tm1 .bahas img{
+    .tm1 .bahas1{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+    .tm1 .bahas1 img{
         width: 600px;
     }
     .tm1 .bahas .kata{
+        padding-top: 50px;
+        margin: 0 20px 0 20px;
+    }
+    .tm1 .bahas1 .kata{
         padding-top: 50px;
         margin: 0 20px 0 20px;
     }
@@ -328,7 +366,7 @@ body{
         height: auto;
         padding-bottom: 50px;
     } */
-    .tm1 .bahas img{
+    .tm1 .bahas1 img{
         width: 400px;
     }
     .kata{
@@ -345,6 +383,9 @@ body{
             height: 200px;
         }
         .contener1 .isi-hp .bahas{
+            font-size: 20px;
+            }
+        .contener1 .isi-hp .bahas1{
             font-size: 20px;
             }
     }
@@ -374,7 +415,7 @@ body{
             height: auto;
             padding-bottom: 50px;
         } */
-        .tm1 .bahas img{
+        .tm1 .bahas1 img{
             width: 300px;
         }
         .kata{
@@ -383,12 +424,19 @@ body{
         .contener1 .isi-hp .bahas{
         font-size: 10px;
         }
+        .contener1 .isi-hp .bahas1{
+        font-size: 10px;
+        }
         .tm1 .judultm{
             padding-top: 10px;
             font-size: 20px;
             margin: auto;
         }
         .tm1 .bahas{
+            margin-top: 2px;
+            padding-top: 10px;
+        }
+        .tm1 .bahas1{
             margin-top: 2px;
             padding-top: 10px;
         }
