@@ -2,6 +2,8 @@ body{
     background: #31303f;
     
 }
+
+
 .conten{
     width: 90%;
     height: 100vh;
@@ -17,7 +19,7 @@ body{
 .conten .penjelasan{
     /* backdrop-filter: blur(20px); */
 
-    color: #fff;
+    color: #e6e6e6;
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: arial;
@@ -26,19 +28,24 @@ body{
     line-height: 30px;
     margin-bottom: 9%;
     width: 1200px;
+    /* text-shadow: 0px 0px 5px rgb(0, 0, 0) */
+
 }
 .penjelasan p{
+    /* font-weight: 600; */
     font-size: 18px;
 }
 .conten .judul {
+    
     font-size: 65px;
     padding-left: 20px;
-    padding-top: ;
     letter-spacing: 20%;
     color: #cf5858;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0)
+
     
 }
 .conten .judul h1{
@@ -48,20 +55,11 @@ body{
 /* .navigation-scorlled{
 
 } */
-.bgimage{
-    /* position: relative; */
-    width: 100%;
-    height: 100vh;
-    background: url(image/bg3a.jpg) no-repeat;
-    background-size:cover  ;
-    background-position: center;
-    background-attachment: fixed;
-}
 .bgimage1{
     /* position: relative; */
     width: 100%;
     height: 100vh;
-    background: url(image/Paris.jpeg) no-repeat;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(image/Eiffel-Tower-1.jpg);
     background-size:cover  ;
     background-position: center;
     background-attachment: fixed;
@@ -73,6 +71,7 @@ body{
     width: 100%;
     height: auto;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 .contener2{
     /* background: #19243b; */
@@ -93,9 +92,9 @@ body{
     text-align: center;
     padding-bottom: 1%;
 }
-.contener1 .isi{
+.contener1 .isi-hp{
     display: grid;
-    grid-template-columns: auto 40%;
+    grid-template-columns: auto;
     margin: auto;
     font-size: 25px;
     text-align: justify;
@@ -110,9 +109,12 @@ body{
     width: 500px;
     transition: 0.5s all;
 }
-.contener1 .isi-hp{
-    display: none;
-}
+/* .contener1 .isi-hp p{
+    margin: auto;
+    font-size: 23px;
+    text-align: justify;
+    width: 80%;
+} */
 .tm1{
     /* padding-top: 5px; */
     width: 80%;
@@ -130,7 +132,33 @@ body{
     text-align: center;
     padding-bottom: 1%;
 }
-.tm1 .bahas img{
+.backvid{
+    border-radius: 30px;
+    margin: auto;
+    justify-self: center;
+    display: block;
+    width: 900px;
+    height: 500px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+}
+.tm1 .bahas{
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 25px;
+    text-align: justify;
+    padding-bottom: 70px;
+    /* padding-top: 50px; */
+}
+.tm1 .bahas1{
+    display: grid;
+    grid-template-columns: 40% auto;
+    font-size: 25px;
+    text-align: justify;
+    /* padding-bottom: 70px; */
+    padding-top: 50px;
+}
+.tm1 .bahas1 img{
     border-radius: 30px;
     margin: auto;
     justify-self: center;
@@ -138,20 +166,35 @@ body{
     width: 500px;
     transition: 0.5s all;
 }
-.tm1 .bahas{
-    display: grid;
-    grid-template-columns: 40% auto;
-    font-size: 25px;
-    text-align: justify;
-    padding-bottom: 70px;
-    padding-top: 50px;
-}
 
 .body a {
     text-decoration: none;
 }
+.kata > p, .kata-more > p{
+    padding-top: 20px;
+}
+.bahas .kata-more{
+
+    transition: all 0.5s;
+    display: none;
+}
+.bahas .kata-more.readed{
+    transition: all 0.5s;
+    display: block;
+}
 .bahas .kata{
+
+        margin-right: 20px;
+    padding-top: 20px;
   margin-right: 20px;
+  margin-left: 20px;
+}
+.bahas1 .kata{
+
+        margin-right: 20px;
+    padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -197,7 +240,14 @@ body{
     padding: 24px;
   }
 } */
+@media only screen and  (max-width: 1221px){
+    .conten .judul{
+        font-size: 50px;
+        /* letter-spacing: 10px; */
+        text-shadow: 2px 2px 5px rgb(0, 0, 0)
 
+    }
+}
 @media only screen and  (max-width: 1700px){
     /* .contener1{
         height: 700px;
@@ -208,8 +258,9 @@ body{
         margin-bottom: 150px;
     }
 }
+
 @media only screen and  (max-width: 1600px){
-    .tm1 .bahas img{
+    .tm1 .bahas1 img{
         width: 450px;
         transition: 0.5s all;
     }
@@ -224,15 +275,22 @@ body{
         text-align: justify;
         width: 90%;
     }
-    .contener1 .isi img{
+    .backvid{
         transition: 0.5s all;
-        width: 450px;
-        margin-bottom: 150px;
+        width: 700px;
+        height: 400px;
+        margin-bottom: 10px;
     }
     .tm1{
         transition: 0.5s all;
         width: 90%;
     }
+    .contener1 .isi img{
+        transition: 0.5s all;
+        width: 450px;
+        margin-bottom: 150px;
+    }
+
 }
 
 @media only screen and  (max-width: 1290px){
@@ -259,7 +317,7 @@ body{
     }
     .contener1 .judul{
 
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
     .contener1 .isi-hp img{
         transition: 0.5s all;
@@ -276,20 +334,34 @@ body{
         transition: 0.5s all;
         
     }
+    .contener1 .isi-hp .bahas1{
+        padding-top: 50px;
+        transition: 0.5s all;
+        
+    }
     .tm1 .bahas{
         display: grid;
         grid-template-columns:  auto;
     }
-    .tm1 .bahas img{
+    .tm1 .bahas1{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+    .tm1 .bahas1 img{
         width: 600px;
     }
     .tm1 .bahas .kata{
         padding-top: 50px;
         margin: 0 20px 0 20px;
     }
+    .tm1 .bahas1 .kata{
+        padding-top: 50px;
+        margin: 0 20px 0 20px;
+    }
     @media only screen and  (max-width: 1100px){
-    .contener1 .isi-hp img{
+    .backvid{
         width: 600px;
+        height: 340px;
     }
 
     }
@@ -307,14 +379,15 @@ body{
     .contener2 .judul{
         font-size: 75px;
     }
-    .contener1 .isi-hp img{
-        width: 400px;
+    .backvid{
+        width: 450px;
+        height: 260px;
     }
     /* .contener1{
         height: auto;
         padding-bottom: 50px;
     } */
-    .tm1 .bahas img{
+    .tm1 .bahas1 img{
         width: 400px;
     }
     .kata{
@@ -326,6 +399,16 @@ body{
             font-size: 12px;
             line-height: 13px;
         }
+        .backvid{
+            width: 350px;
+            height: 200px;
+        }
+        .contener1 .isi-hp .bahas{
+            font-size: 20px;
+            }
+        .contener1 .isi-hp .bahas1{
+            font-size: 20px;
+            }
     }
 
     @media only screen and  (max-width: 452px){
@@ -345,20 +428,24 @@ body{
         .contener2 .judul{
             font-size: 50px;
         }
-        .contener1 .isi-hp img{
+        .backvid{
             width: 300px;
+            height: 170px;
         }
         /* .contener1{
             height: auto;
             padding-bottom: 50px;
         } */
-        .tm1 .bahas img{
+        .tm1 .bahas1 img{
             width: 300px;
         }
         .kata{
             font-size: 10px;
         }
         .contener1 .isi-hp .bahas{
+        font-size: 10px;
+        }
+        .contener1 .isi-hp .bahas1{
         font-size: 10px;
         }
         .tm1 .judultm{
@@ -370,6 +457,10 @@ body{
             margin-top: 2px;
             padding-top: 10px;
         }
+        .tm1 .bahas1{
+            margin-top: 2px;
+            padding-top: 10px;
+        }
         .button-67{
             padding: 10px;
             font-size: 10px;
@@ -378,3 +469,62 @@ body{
 
     }
 }
+
+/* BUTTON */
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }

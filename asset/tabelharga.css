@@ -1,0 +1,11 @@
+.bold{
+    font-weight: 700;
+    color: #f35950;
+}
+td, th{
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}

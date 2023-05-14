@@ -1,3 +1,12 @@
+.bgimage2{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background: url(image/Eiffel-Tower-1.jpg) no-repeat;
+    background-size:cover  ;
+    background-position: center;
+    background-attachment: fixed;
+}
 body{
     background: #31303f;
     
@@ -17,7 +26,7 @@ body{
 .conten .penjelasan{
     /* backdrop-filter: blur(20px); */
 
-    color: #fff;
+    color: #e6e6e6;
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: arial;
@@ -26,19 +35,24 @@ body{
     line-height: 30px;
     margin-bottom: 9%;
     width: 1200px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0)
+
 }
 .penjelasan p{
+    font-weight: 600;
     font-size: 18px;
 }
 .conten .judul {
+    
     font-size: 65px;
     padding-left: 20px;
-    padding-top: ;
     letter-spacing: 20%;
     color: #cf5858;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0)
+
     
 }
 .conten .judul h1{
@@ -48,24 +62,6 @@ body{
 /* .navigation-scorlled{
 
 } */
-.bgimage{
-    /* position: relative; */
-    width: 100%;
-    height: 100vh;
-    background: url(image/bg3a.jpg) no-repeat;
-    background-size:cover  ;
-    background-position: center;
-    background-attachment: fixed;
-}
-.bgimage1{
-    /* position: relative; */
-    width: 100%;
-    height: 100vh;
-    background: url(image/Paris.jpeg) no-repeat;
-    background-size:cover  ;
-    background-position: center;
-    background-attachment: fixed;
-}
 .contener1{
     margin: auto;
     background: #19243b;
@@ -197,7 +193,14 @@ body{
     padding: 24px;
   }
 } */
+@media only screen and  (max-width: 1221px){
+    .conten .judul{
+        font-size: 50px;
+        /* letter-spacing: 10px; */
+        text-shadow: 2px 2px 5px rgb(0, 0, 0)
 
+    }
+}
 @media only screen and  (max-width: 1700px){
     /* .contener1{
         height: 700px;
