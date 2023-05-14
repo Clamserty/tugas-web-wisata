@@ -294,32 +294,37 @@ body{
 
     }
     @media only screen and  (max-width: 820px){
-    .conten .penjelasan p{
-        font-size: 15px;
-        line-height: 20px;
+        .conten .penjelasan p{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .conten .penjelasan h3{
+            font-size: 20px;
+        }
+        .contener1 .judul{
+            font-size: 75px;
+        }
+        .contener2 .judul{
+            font-size: 75px;
+        }
+        .contener1 .isi-hp img{
+            width: 400px;
+        }
+        /* .contener1{
+            height: auto;
+            padding-bottom: 50px;
+        } */
+        .tm1 .bahas img{
+            width: 400px;
+        }
+        .kata{
+            font-size: 20px;
+        }
     }
-    .conten .penjelasan h3{
-        font-size: 20px;
-    }
-    .contener1 .judul{
-        font-size: 75px;
-    }
-    .contener2 .judul{
-        font-size: 75px;
-    }
-    .contener1 .isi-hp img{
-        width: 400px;
-    }
-    /* .contener1{
-        height: auto;
-        padding-bottom: 50px;
-    } */
-    .tm1 .bahas img{
-        width: 400px;
-    }
-    .kata{
-        font-size: 20px;
-    }
+    @media only screen and  (max-width: 650px){
+        .contener2 .judul{
+            font-size: 60px ;
+        }
     }
     @media only screen and  (max-width: 550px){
         .conten .penjelasan p{
@@ -327,7 +332,11 @@ body{
             line-height: 13px;
         }
     }
-
+    @media only screen and  (max-width: 550px){
+        .contener2 .judul{
+            font-size: 50px;
+        }
+    }
     @media only screen and  (max-width: 452px){
         .conten .penjelasan p{
             font-size: 10px;
@@ -335,7 +344,7 @@ body{
         }
         .conten .judul h1{
             font-size: 70px ;
-        };
+        }
         .conten .penjelasan h3{
             font-size: 20px;
         }
@@ -343,7 +352,7 @@ body{
             font-size: 50px;
         }
         .contener2 .judul{
-            font-size: 50px;
+            font-size: 45px;
         }
         .contener1 .isi-hp img{
             width: 300px;
@@ -359,7 +368,7 @@ body{
             font-size: 10px;
         }
         .contener1 .isi-hp .bahas{
-        font-size: 10px;
+            font-size: 10px;
         }
         .tm1 .judultm{
             padding-top: 10px;
