@@ -64,6 +64,7 @@ header{
 }
 
 .navigation.active{
+    transition: all 0.5s;
     height: 400px;
     /* backdrop-filter: blur(200px); */
 }
@@ -368,5 +369,11 @@ ul li:hover ul.conten-drop {
             background: #fefefe;
             margin: 3px 0;
         }
-        
+        .navigation.active{
+            top: 60px;
+            height: 350px;
+        }
+        .navigation ul li a{
+            padding: 6px;
+        }
 }

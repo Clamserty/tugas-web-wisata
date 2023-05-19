@@ -114,12 +114,15 @@ body{
     display: none;
 }
 .tm1{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50% ;
     /* padding-top: 5px; */
     width: 80%;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    background: #1b3048;
+    background: #1b304800;
     border-radius: 20px;
     backdrop-filter: blur(20px);
 }

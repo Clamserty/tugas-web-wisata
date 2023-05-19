@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Login - SSweb</title>
         <link rel="icon" href="asset/image/logo2.ico">
         <link rel="stylesheet" href="asset/login.css">
+        <link rel="stylesheet" href="asset/template.css">
         <link rel="stylesheet" href="asset/home.css">
         <link rel="stylesheet" href="asset/nav.css">
         <link rel="stylesheet" href="asset/footer.css">
@@ -30,11 +31,11 @@
                   <a href="index.html">Home</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="about-paris.html">About</a>
                 </li>
-                <!-- <li>
-                  <a href="#">service</a>
-                </li> -->
+                <li class="drop">
+                  <a href="place.html">Place</a>              
+                </li>
                 <li>
                   <a href="#">contact</a>
                 </li>
@@ -49,21 +50,48 @@
                 <div class="form-box login">
                   <h2>LOGIN</h2>
                   <form action="#">
-                    <div class="input-box">
-                      <span class="icon"></span>
-                      <input type="email" name="email" id="email">
-                      <label for="">Email</label>
+                    <div class="form-control">
+                      <input type="text" required="">
+                      <label>
+                        <span style="transition-delay:0ms">U</span>
+                        <span style="transition-delay:50ms">s</span>
+                        <span style="transition-delay:100ms">e</span>
+                        <span style="transition-delay:150ms">r</span>
+                        <span style="transition-delay:200ms">n</span>
+                        <span style="transition-delay:250ms">a</span>
+                        <span style="transition-delay:300ms">m</span>
+                        <span style="transition-delay:350ms">e</span>
+                      </label>
                     </div>
-                    <div class="input-box">
-                      <span class="icon"></span>
-                      <input type="password" name="password" id="password">
-                      <label for="">Password</label>
+                    <div class="form-control">
+                      <input type="password" required="">
+                      <label>
+                        <span style="transition-delay:0ms">P</span>
+                        <span style="transition-delay:50ms">a</span>
+                        <span style="transition-delay:100ms">a</span>
+                        <span style="transition-delay:150ms">a</span>
+                        <span style="transition-delay:200ms">a</span>
+                        <span style="transition-delay:250ms">a</span>
+                        <span style="transition-delay:300ms">a</span>
+                        <span style="transition-delay:350ms">a</span>
+                      </label>
                     </div>
                     <div class="remember">
-                      <label for=""><input type="checkbox" name="remember" id="rmb">Remember Me</label>
-                      <a href="#">Forgot Password?</a>
+                      <div class="container">
+                        <input type="checkbox" id="cbx" style="display: none;">
+                        <label for="cbx" class="check">
+                           <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                          </svg>
+                          Remember Me
+                        </label>
+                      </div>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="button" >
+                      <span class="span">Login</span>
+                      <span class="span">Hello!</span>
+                    </button>
                   </form>
                 </div>
             </div>

@@ -540,3 +540,9 @@ body{
       padding: 0 40px;
     }
   }
+  @media (min-width: 450px) {
+    .button-56 {
+      height: 20px;
+      width: 100px;
+    }
+  }
