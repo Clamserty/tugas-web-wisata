@@ -330,7 +330,7 @@ body{
         width: 600px;
     }
     .tm1 .bahas .kata{
-        padding-top: 50px;
+        /* padding-top: 50px; */
         margin: 0 20px 0 20px;
     }
     .tm1 .bahas1 .kata{
@@ -392,7 +392,7 @@ body{
 
     @media only screen and  (max-width: 452px){
         .conten .penjelasan p{
-            font-size: 10px;
+            font-size: 15px;
             line-height: 13px;
         }
         .conten .judul h1{
@@ -419,13 +419,13 @@ body{
             width: 300px;
         }
         .kata{
-            font-size: 10px;
+            font-size: 15px;
         }
         .contener1 .isi-hp .bahas{
-        font-size: 10px;
+        font-size: 15px;
         }
         .contener1 .isi-hp .bahas1{
-        font-size: 10px;
+        font-size: 15px;
         }
         .tm1 .judultm{
             padding-top: 10px;
@@ -442,7 +442,7 @@ body{
         }
         .button-67{
             padding: 10px;
-            font-size: 10px;
+            font-size: 15px;
 
         }
 
