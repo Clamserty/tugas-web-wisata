@@ -1,0 +1,20 @@
+.maps{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+    height: 400px;
+}
+.img, .iframe{
+    transition: all 1s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.473);
+
+}
+.img:hover, .iframe:hover{
+    transition: all 0.5s;
+
+    transform: scale(1.1);
+      box-shadow: 0px 10px 20px 2px rgb(0, 0, 0);
+
+}

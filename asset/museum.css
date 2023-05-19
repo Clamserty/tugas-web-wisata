@@ -540,9 +540,13 @@ body{
       padding: 0 40px;
     }
   }
-  @media (min-width: 450px) {
+  @media (max-width: 450px) {
     .button-56 {
+      font-size: 15px;
+      padding: 0 10px;
       height: 20px;
-      width: 100px;
+    }
+    .button-56:after{
+        height: 20px;
     }
   }
