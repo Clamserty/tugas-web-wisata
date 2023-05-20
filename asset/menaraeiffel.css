@@ -469,6 +469,26 @@ body{
 
     }
 }
+.bahas .kata-more{
+
+    transition: all 0.5s;
+    display: none;
+}
+.bahas .kata-more.readed{
+    transition: all 0.5s;
+    display: block;
+}
+.less.none{
+    display: none;
+}
+.readmore.none.fas{
+    display: none;
+}
+.readless.fas, .readless.fas.none{
+    display: none;
+}
+.readless.yes.fas{
+    display: inline-block;
 
 /* BUTTON */
 .button-56 {
