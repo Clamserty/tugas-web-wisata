@@ -540,9 +540,30 @@ body{
       padding: 0 40px;
     }
   }
-  @media (min-width: 450px) {
+  @media (max-width: 450px) {
     .button-56 {
+      font-size: 15px;
+      padding: 0 10px;
       height: 20px;
-      width: 100px;
+    }
+    .button-56:after{
+        height: 20px;
     }
   }
+
+  .tabel{
+    margin: auto;
+    width: 90%;
+    text-align: left;
+}
+.tabel tr{
+    padding-top: 100px;
+}
+td {
+    border-bottom: 1px solid white;
+    padding: 8px;
+}
+.border0{
+    border-bottom: 0px solid white;
+
+}

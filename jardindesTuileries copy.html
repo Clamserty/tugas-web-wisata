@@ -7,8 +7,9 @@
   <title>Jardin des Tuileries - SSweb  </title>
   <link rel="icon" href="asset/image/logo2.ico">
   <link rel="stylesheet" href="asset/taman.css">
+  <link rel="stylesheet" href="asset/tabel.css">
   <link rel="stylesheet" href="asset/maps.css">
-  <link rel="stylesheet" href="asset/nav.css">
+  <!-- <link rel="stylesheet" href="asset/nav.css"> -->
   <link rel="stylesheet" href="asset/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <!-- <script src="asset/js/home.js"></script> -->
@@ -150,94 +151,41 @@
               <p> Untuk masuk ke Louvre Museum, Anda harus membeli tiket masuk yang bisa Anda dapatkan di loket museum, mesin penjualan tiket otomatis, atau toko souvenir. Harga tiket masuk bervariasi tergantung pada tanggal kunjungan, jenis tiket, dan status Anda. Berikut adalah beberapa informasi tentang harga tiket masuk
               </p>
               <br>
-              <table width="100%" class="tabel">
-                <tr>
-                  <td>No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                  <td>
-                    <h3>Bulan</h3>
-                  </td>
-                  <td>
-                    <h3>Jam Buka</h3>
-                  </td>
-                </tr>
-                <tr margin-top="100px">
-                  <td rowspan="2">1. </td>
-                  <td class="border0">
-                    <p>
-                      Januari hingga Maret
-                    </p>
-                  </td>
-                  <td rowspan="2">
-                    <p>
-                      pukul 07.30 hingga 19.30
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td border-bottom="0px">
-                    <p>
-                      Oktober hingga Desember
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td rowspan="2">2. </td>
-                  <td class="border0">
-                    <p>
-                      April hingga Mei
-                    </p>
-                  </td>
-                  <td rowspan="2">
-                    <p>
-                      pukul 07.00 hingga 21.00
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>
-                      September
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3. </td>
-                  <td>
-                    <p>
-                      Juni hingga Agustus
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      pukul 07.00 hingga 23.00
-                    </p>
-                  </td>
-                </tr>
-                <!-- <tr>
-                  <td>2. </td>
-                  <td>
-                    <p>
-                      Harga tiket masuk untuk hari Rabu dan Jumat malam (setelah pukul 18:00) adalah 15 Euro atau sekitar Rp 235.500.
-                    </p>
-                  </td>
-                </tr>
-                  <td>3. </td>
-                  <td>
-                    <p>
-                      Harga tiket masuk untuk pengunjung berusia 18-25 tahun yang bukan warga negara Uni Eropa adalah 8.50 Euro atau sekitar Rp 133.450.
-                    </p>
-                  </td>
-                </tr>
-                </tr>
-                  <td>4. </td>
-                  <td>
-                    <p>
-                      Harga tiket masuk untuk pengunjung yang memiliki Paris Museum Pass (kartu yang memberikan akses ke lebih dari 60 museum dan monumen di Paris) adalah gratis.
-                    </p>
-                  </td>
-                </tr> -->
-                 
-              </table>
+              <div class="tabel">
+                <!-- <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2> -->
+                <ul class="responsive-table">
+                  <li class="table-header">
+                    <div class="col col-1">Job Id</div>
+                    <div class="col col-2">Customer Name</div>
+                    <div class="col col-3">Amount Due</div>
+                    <div class="col col-4">Payment Status</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">42235</div>
+                    <div class="col col-2" data-label="Customer Name">John Doe</div>
+                    <div class="col col-3" data-label="Amount">$350</div>
+                    <div class="col col-4" data-label="Payment Status">Pending</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">42442</div>
+                    <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+                    <div class="col col-3" data-label="Amount">$220</div>
+                    <div class="col col-4" data-label="Payment Status">Pending</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">42257</div>
+                    <div class="col col-2" data-label="Customer Name">John Smith</div>
+                    <div class="col col-3" data-label="Amount">$341</div>
+                    <div class="col col-4" data-label="Payment Status">Pending</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">42311</div>
+                    <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+                    <div class="col col-3" data-label="Amount">$115</div>
+                    <div class="col col-4" data-label="Payment Status">Pending</div>
+                  </li>
+                </ul>
+              </div>
 
               <p>
                 Jam dan hari buka Louvre Museum adalah setiap hari mulai dari pukul 09:00 hingga 18:00 kecuali di hari Selasa (tutup). Museum ini juga buka hingga pukul 21:45 pada hari Rabu dan Jumat malam.
