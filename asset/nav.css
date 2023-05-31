@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #11101b;
+    background: #0f1106;
     background-size: cover;
     background-position: center;
 }
@@ -52,9 +52,9 @@ header{
     left: 0;
     width: 100%;
     padding: 10px 100px;
-    background: #365a78;
+    background: #14662b;
     border-radius: 0 0 50px 50px;
-    border-color: #11101b;
+    border-color: #59539e;
     display: flex;
     justify-content: space-between;
     align-items: center;
